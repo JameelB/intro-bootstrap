@@ -12,6 +12,7 @@
 
   <body>
     <div class="container-fluid">
+      <!-- Nav Bar -->
       <div class="row nav-bar pt-2 pt-3 px-3 justify-content-md-center align-middle">
         <div class="col-md-3">
           <h1><i class="fa fa-instagram"></i></h1>
@@ -27,11 +28,59 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        Profile Header
+      <!-- Profile Header -->
+      <div class="row page-content justify-content-md-center">
+        <div class="col-lg-5 col-md-5 py-4 px-4 text-right">
+          <img class="profile-pic" src="https://scontent-dub4-1.cdninstagram.com/vp/1a7b52ed1972ce6c2a7b9d21c9f83586/5C084152/t51.2885-19/s150x150/13259493_1599310013713132_1747639979_a.jpg"/>
+        </div>
+        <div class="col-lg-7 col-md-7 py-4">
+          <div class="row py-2 px-4 text-center">
+            <h3 class="px-2 align-text-bottom"> Some-username </h3>
+            <button type="button" class="btn btn-outline-secondary btn-sm px-2 align-middle">Edit Profile</button>
+            <h3 class="px-2 align-middle"><i class="fa fa-cog"></i></h3>
+          </div>
+          <div class="row py-2 px-4 text-center">
+            <span class="px-2">
+              <b>100</b> posts              
+            </span>
+            <span class="px-2">
+              <b>100</b> followers              
+            </span>
+            <span class="px-2">
+              <b>100</b> following              
+            </span>
+          </div>
+          <div class="row py-2 px-4 text-center">
+            <p class="px-2">
+              Some description here...
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        Photo album
+      <!-- Photo Album -->
+      <div class="row page-content">
+        <ul class="col-md-12 nav nav-tabs text-center" id="photos-navbar" role="tablist">
+          <li class="col-md-4 nav-item">
+            <a class="nav-link active" id="post-tab" data-toggle="tab" href="#post" role="tab" aria-controls="post" aria-selected="true">Posts</a>
+          </li>
+          <li class="col-md-4 nav-item">
+            <a class="nav-link" id="saved-tab" data-toggle="tab" href="#saved" role="tab" aria-controls="saved" aria-selected="false">Saved</a>
+          </li>
+          <li class="col-md-4 nav-item">
+            <a class="nav-link" id="tag-tab" data-toggle="tab" href="#tag" role="tab" aria-controls="tag" aria-selected="false">Tag</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row page-content tab-content" id="photos-navbar-content">
+        <div class="tab-pane fade show active" id="post" aria-labelledby="post-tab" role="tabpanel">
+          Post content here
+        </div>
+        <div class="tab-pane fade" id="saved" aria-labelledby="saved-tab" role="tabpanel">
+          Saved content here
+        </div>
+        <div class="tab-pane fade" id="tag" aria-labelledby="tag-tab" role="tabpanel">
+          Tag content here
+        </div>
       </div>
     </div>
 
